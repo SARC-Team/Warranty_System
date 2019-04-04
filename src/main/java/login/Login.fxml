@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" fx:id="loginpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.login.LoginController">
+    <children>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #AC04B4;">
+            <children>
+                <ImageView fitHeight="600.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../resources/images/border1.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="230.0" fitWidth="381.0" layoutX="10.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../resources/images/sarccard.PNG" />
+                    </image>
+                </ImageView>
+            </children></Pane>
+        <Pane fx:id="register_area" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="parent" stylesheets="@loginui.css">
+            <children>
+                <ImageView fitHeight="103.0" fitWidth="95.0" layoutX="52.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../resources/images/warranty2.PNG" />
+                    </image>
+                </ImageView>
+                <Label layoutX="50.0" layoutY="121.0" text="Register Form," textFill="#224abf">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="50.0" layoutY="156.0" text="Fill the form of registration" textFill="#676363">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="btnsign" layoutX="66.0" layoutY="517.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#signup" prefHeight="35.0" prefWidth="289.0" styleClass="loginBtn" stylesheets="@loginui.css" text="Signup">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <effect>
+                        <Lighting>
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                        </Lighting>
+                    </effect>
+                </JFXButton>
+                <Label layoutX="128.0" layoutY="555.0" minHeight="-Infinity" minWidth="-Infinity" text="Already Signup?" />
+                <Label layoutX="235.0" layoutY="554.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#back" styleClass="forgetBtn" stylesheets="@loginui.css" text="Login" wrapText="true">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <JFXTextField fx:id="txtemailsign" labelFloat="true" layoutX="65.0" layoutY="233.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="257.0" promptText="Email" unFocusColor="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXPasswordField fx:id="txtpass1sign" labelFloat="true" layoutX="67.0" layoutY="274.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="257.0" promptText="Password" unFocusColor="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXPasswordField>
+                <JFXPasswordField fx:id="txtpass1sign1" labelFloat="true" layoutX="67.0" layoutY="314.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="257.0" promptText="Confirm Password" unFocusColor="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXPasswordField>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="340.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btnclose" prefHeight="30.0" prefWidth="60.0" styleClass="closeBtn" stylesheets="@../Home/HomePane/home.css">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/images/close.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btnmini" prefHeight="30.0" prefWidth="60.0" styleClass="closeBtn" stylesheets="@../Home/HomePane/home.css" textFill="#f8f8f8">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/images/minimize.png" />
+                            </image>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#back" prefHeight="30.0" prefWidth="60.0" styleClass="closeBtn" stylesheets="@../Home/HomePane/home.css">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/images/icons8_Double_Left_20px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <JFXComboBox fx:id="txtbranch" focusColor="#5978ba" layoutX="71.0" layoutY="184.0" prefHeight="35.0" prefWidth="137.0" promptText="Kelaniya" style="-fx-background-color: white;" unFocusColor="WHITE" />
+                <ImageView fx:id="companylogo" fitHeight="90.0" fitWidth="145.0" layoutX="235.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../resources/images/singer.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="txtcompany" layoutX="278.0" layoutY="192.0" prefHeight="20.0" prefWidth="45.0" text="Singer">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="txtloaction" labelFloat="true" layoutX="68.0" layoutY="352.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="257.0" promptText="Location" unFocusColor="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtaddress" labelFloat="true" layoutX="69.0" layoutY="391.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="257.0" promptText="Address" unFocusColor="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtphone" labelFloat="true" layoutX="70.0" layoutY="430.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="257.0" promptText="Phone Number" unFocusColor="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtskype" labelFloat="true" layoutX="72.0" layoutY="469.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="257.0" promptText="Web Address" unFocusColor="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+            </children>
+        </Pane>
+        <Pane fx:id="content_area" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="parent" stylesheets="@loginui.css">
+            <children>
+                <ImageView fitHeight="155.0" fitWidth="122.0" layoutX="49.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../resources/images/warranty2.PNG" />
+                    </image>
+                </ImageView>
+                <Label layoutX="49.0" layoutY="196.0" prefHeight="49.0" prefWidth="238.0" text="Welcome Back," textFill="#142acf">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label layoutX="49.0" layoutY="241.0" text="Sign In to Continue" textFill="#676363">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="txtemaillogin" focusColor="#554fbd" labelFloat="true" layoutX="69.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="257.0" promptText="Email" unFocusColor="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXPasswordField fx:id="txtpasslogin" focusColor="#4c6ed5" labelFloat="true" layoutX="69.0" layoutY="354.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="257.0" promptText="Password" unFocusColor="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXPasswordField>
+                <JFXButton fx:id="btn_login" layoutX="56.0" layoutY="463.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#login" onMouseClicked="#sendEmail" prefHeight="35.0" prefWidth="289.0" styleClass="loginBtn" stylesheets="@loginui.css" text="Login">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <effect>
+                        <Lighting>
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                        </Lighting>
+                    </effect>
+                </JFXButton>
+                <Label layoutX="219.0" layoutY="389.0" onMouseClicked="#forgetpass" styleClass="forgetBtn" stylesheets="@loginui.css" text="Forget Password?" textFill="#100dcd" underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <Label layoutX="135.0" layoutY="507.0" text="New User?" />
+                <Label layoutX="207.0" layoutY="506.0" onMouseClicked="#signuplink" styleClass="forgetBtn" stylesheets="@loginui.css" text="Signup">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btnclose" prefHeight="30.0" prefWidth="60.0" styleClass="closeBtn" stylesheets="@../Home/HomePane/home.css">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/images/close.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+            </children></Pane>
+    </children>
+</AnchorPane>

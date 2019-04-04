@@ -1,0 +1,47 @@
+<component name="libraryTable">
+  <library name="jsr305-1.3.9">
+    <CLASSES>
+      <root url="jar://F:/Jar_Files/new/google-api-client/jsr305-1.3.9.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/google-http-client-jackson2-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/google-oauth-client-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/commons-logging-1.1.1.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/httpcore-4.0.1.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/jackson-core-2.1.3.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/google-api-client-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/guava-jdk5-17.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/httpclient-4.0.1.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/google-http-client-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-client/commons-codec-1.3.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/jackson-core-2.1.3.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/commons-codec-1.3.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/google-oauth-client-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/google-api-client-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/httpcore-4.0.1.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/google-http-client-jackson2-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/guava-jdk5-17.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/httpclient-4.0.1.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/google-http-client-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/jsr305-1.3.9.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/google-api-services-drive-v3-rev105-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/commons-logging-1.1.1.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/google-oauth-client-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/google-oauth-client-java6-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/jetty-util-6.1.26.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/jsr305-1.3.9.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/commons-codec-1.3.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/httpcore-4.0.1.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/httpclient-4.0.1.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/google-oauth-client-jetty-1.23.0.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/commons-logging-1.1.1.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/jetty-6.1.26.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/servlet-api-2.5-20081211.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/google-http-client-1.23.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://F:/Jar_Files/new/google-api-client/jsr305-1.3.9.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-api-services-drive/jsr305-1.3.9.jar!/" />
+      <root url="jar://F:/Jar_Files/new/google-oauth-client-jetty/jsr305-1.3.9.jar!/" />
+    </SOURCES>
+  </library>
+</component>

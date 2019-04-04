@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="inputPane" style="-fx-background-color: #B8B8B8;" stylesheets="@Customer.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Home.CustomerPane.CustomerController">
+   <children>
+      <Pane fx:id="panecheckitem" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: #B8B8B8;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="184.0" layoutX="139.0" layoutY="489.0" opacity="0.14" stroke="WHITE" strokeType="INSIDE" width="953.0" />
+            <Label layoutX="21.0" layoutY="17.0" text="Cheking Item Details" textFill="#311db2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgqr" fitHeight="225.0" fitWidth="225.0" layoutX="505.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton layoutX="470.0" layoutY="420.0" onMouseClicked="#btnscanqr" prefHeight="53.0" prefWidth="288.0" style="-fx-background-color: green;" text="Scan Item QR Code" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="192.0" layoutY="513.0" prefHeight="35.0" prefWidth="181.0" text="Item Type :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblitemytpe" layoutX="380.0" layoutY="516.0" prefHeight="35.0" prefWidth="209.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="555.0" prefHeight="35.0" prefWidth="178.0" text="Brand Name :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblbrand" layoutX="376.0" layoutY="558.0" prefHeight="35.0" prefWidth="225.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="600.0" prefHeight="35.0" prefWidth="185.0" text="Serial Number :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblserial" layoutX="381.0" layoutY="603.0" prefHeight="35.0" prefWidth="234.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="640.0" layoutY="521.0" prefHeight="35.0" prefWidth="246.0" text="Amount :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblamount" layoutX="909.0" layoutY="524.0" prefHeight="35.0" prefWidth="169.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="639.0" layoutY="563.0" prefHeight="35.0" prefWidth="246.0" text="Warranty(Hardware) :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblwarrantyhard" layoutX="905.0" layoutY="566.0" prefHeight="35.0" prefWidth="175.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="636.0" layoutY="608.0" prefHeight="35.0" prefWidth="253.0" text="Warranty (Software) :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblwarrantysoft" layoutX="910.0" layoutY="611.0" prefHeight="35.0" prefWidth="169.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="nextstep" layoutX="1005.0" layoutY="688.0" onMouseClicked="#btnnextstep" prefHeight="26.0" prefWidth="225.0" style="-fx-background-color: green;" text="Next Step" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtpath" layoutX="215.0" layoutY="85.0" prefHeight="40.0" prefWidth="635.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="897.0" layoutY="84.0" onMouseClicked="#btnpath" prefHeight="26.0" prefWidth="225.0" style="-fx-background-color: green;" text="Select QRCode" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="panename" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Enter Customer Name : ">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="cusname" layoutX="87.0" layoutY="286.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="119.0" prefWidth="1105.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="897.0" layoutY="620.0" onMouseClicked="#btnname" prefHeight="73.0" prefWidth="325.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="543.0" layoutY="620.0" onMouseClicked="#btnbackcname" prefHeight="73.0" prefWidth="325.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="paneid" layoutX="-5.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Enter Customer ID : ">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="cusid" layoutX="134.0" layoutY="255.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="1000.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="894.0" layoutY="633.0" onMouseClicked="#btnid" prefHeight="90.0" prefWidth="316.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="555.0" layoutY="629.0" onMouseClicked="#btnbackcid" prefHeight="90.0" prefWidth="316.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="paneaddress" layoutX="-7.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Enter Customer Address: ">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="cusaddress" layoutX="134.0" layoutY="255.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="1000.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="862.0" layoutY="622.0" onMouseClicked="#btnaddress" prefHeight="77.0" prefWidth="357.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="486.0" layoutY="624.0" onMouseClicked="#btnbackaddress" prefHeight="77.0" prefWidth="357.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="panephone" layoutX="-4.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Customer Phone Number:">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="cusphone" layoutX="134.0" layoutY="255.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="1000.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="870.0" layoutY="634.0" onMouseClicked="#btnphone" prefHeight="73.0" prefWidth="357.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="501.0" layoutY="635.0" onMouseClicked="#btnbackphone" prefHeight="73.0" prefWidth="357.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="paneemail" layoutX="6.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Customer Email:">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="cusemail" layoutX="134.0" layoutY="255.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="1000.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="870.0" layoutY="626.0" onMouseClicked="#btnemail" prefHeight="48.0" prefWidth="342.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="516.0" layoutY="623.0" onMouseClicked="#btnbackemail" prefHeight="48.0" prefWidth="342.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="panebuy" layoutX="6.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" stylesheets="@Customer.css" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Date of Buy:">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="821.0" layoutY="611.0" onMouseClicked="#btnbuy" prefHeight="63.0" prefWidth="398.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXDatePicker fx:id="cusbuy" editable="false" layoutX="498.0" layoutY="302.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="237.0" showWeekNumbers="true" styleClass="date-picker-popup" stylesheets="@Customer.css" />
+            <JFXButton layoutX="406.0" layoutY="609.0" onMouseClicked="#btnbackbuy" prefHeight="63.0" prefWidth="398.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="panepaymethod" layoutX="8.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Pay Method:">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="850.0" layoutY="625.0" onMouseClicked="#btnpaymethod" prefHeight="40.0" prefWidth="370.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="cuspaymethod" layoutX="443.0" layoutY="332.0" prefHeight="97.0" prefWidth="398.0" style="-fx-font-size: 36px;" unFocusColor="#191515">
+               <padding>
+                  <Insets left="100.0" />
+               </padding></JFXComboBox>
+            <JFXButton layoutX="466.0" layoutY="626.0" onMouseClicked="#btnbackpaymethod" prefHeight="40.0" prefWidth="370.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="panedownpay" layoutX="11.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Down Payment :">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="809.0" layoutY="616.0" onMouseClicked="#btndownpay" prefHeight="78.0" prefWidth="398.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="cusdownpay" layoutX="144.0" layoutY="267.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="1000.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="389.0" layoutY="618.0" onMouseClicked="#btnbackdownpay" prefHeight="78.0" prefWidth="398.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="panemonthly" layoutX="1.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Monthly Payment">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="838.0" layoutY="632.0" onMouseClicked="#btnmonthly" prefHeight="59.0" prefWidth="379.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="cusmonthly" layoutX="142.0" layoutY="261.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="1000.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="433.0" layoutY="632.0" onMouseClicked="#btnbackmonthly" prefHeight="59.0" prefWidth="379.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="panepayamount" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="74.0" layoutY="65.0" text="Payable Amount">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btncreate" layoutX="808.0" layoutY="615.0" onMouseClicked="#btnpayamount" prefHeight="106.0" prefWidth="398.0" style="-fx-background-color: #00B3FF;" text="Next" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="payamount" layoutX="144.0" layoutY="261.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="1000.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btncreate1" layoutX="394.0" layoutY="617.0" onMouseClicked="#btnbackpayamount" prefHeight="106.0" prefWidth="398.0" style="-fx-background-color: #00B3FF;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="sendpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" style="-fx-background-color: #C8C8C8;" stylesheets="@../HomePane/home.css" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="273.0" layoutX="71.0" layoutY="447.0" stroke="BLACK" strokeType="INSIDE" width="278.0" />
+            <JFXCheckBox fx:id="checkemail" layoutX="151.0" layoutY="505.0" selected="true" text="Send Email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="checksms" layoutX="149.0" layoutY="540.0" selected="true" text="Send SMS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton fx:id="btnsend" layoutX="114.0" layoutY="623.0" onMouseClicked="#btnsentdata" prefHeight="51.0" prefWidth="199.0" style="-fx-background-color: #2BFF00;" styleClass="closeBtn" stylesheets="@../HomePane/home.css" text="Send" textFill="#fafafa">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="invoiceimageview" fitHeight="594.0" fitWidth="814.0" layoutX="417.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton layoutX="417.0" layoutY="644.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btnrefresh" prefHeight="64.0" prefWidth="818.0" style="-fx-background-color: green;" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="660.0" layoutY="307.0" text="Please Press Refresh Button" textFill="#cdcdcd">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="144.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/images/warranty2.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="208.0" fitWidth="288.0" layoutX="70.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/images/sarc2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="11.0" text="Finishing Payment">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="381.0" text="Paste Your Image URL:" visible="false" />
+            <JFXTextField fx:id="txturl" layoutX="22.0" layoutY="402.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="420.0" visible="false">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <JFXBadge />
+   </children>
+</AnchorPane>

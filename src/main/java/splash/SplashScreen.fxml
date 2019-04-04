@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.splash.SplashScreenController">
+    <children>
+        <Pane layoutX="14.0" layoutY="23.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../../resources/images/sarc.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="77.0" layoutY="33.0" prefHeight="71.0" prefWidth="451.0" text="Warranty System" textFill="#cc0872">
+                    <font>
+                        <Font name="Impact" size="57.0" />
+                    </font>
+                </Label>
+                <Label layoutX="82.0" layoutY="94.0" text="Version 1.1" textFill="#71ff69">
+                    <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="319.0" layoutY="280.0" text="\@ 2018 SARC Organization : www.sarcsoftwares.com" textFill="#f8f8f8">
+                    <font>
+                        <Font name="Cambria" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="progress" layoutX="73.0" layoutY="223.0" prefHeight="20.0" prefWidth="87.0" textFill="#9aea10">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="4.0" layoutY="221.0" text="Loading" textFill="#88fa25">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Label>
+                <JFXProgressBar fx:id="progressBar" layoutY="247.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="600.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+.button:hover{
+    -fx-background-color : #938787;
+    -fx-background-radius : 0px;
+    -fx-border-color : #C80000;
+    -fx-border-width : 0px 0px 0px 4px;
+    -fx-border-style : solid;
+}
+
+.closeBtn:hover{
+    -fx-background-color : red;
+     color: white;
+     opacity: 0px;
+}
+
+.chart-bar {
+    -fx-background-color: rgba(0,168,355,0.05);
+    -fx-border-color: rgba(0,168,355,0.3) rgba(0,168,355,0.3) 
+        transparent rgba(0,168,355,0.3);
+    -fx-background-radius: 0;
+    -fx-background-position: left center;
+}
+ 
+.data0.chart-bar {
+    /**-fx-background-image: url("..\..\images\lap.png");**/
+    -fx-background-color: green;
+}
+.data1.chart-bar {
+    
+    -fx-background-color: red;
+}
+.data2.chart-bar {
+    
+    -fx-background-color: black;
+}
+.data3.chart-bar {
+    
+    -fx-background-color: blue;
+}
+.data4.chart-bar {
+    
+    -fx-background-color: gray;
+}

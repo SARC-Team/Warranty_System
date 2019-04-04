@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="activation">
+    <CLASSES>
+      <root url="jar://F:/Jar_Files/activation.jar!/" />
+      <root url="jar://F:/Jar_Files/commons-beanutils-1.8.2.jar!/" />
+      <root url="jar://F:/Jar_Files/commons-collections-3.2.1.jar!/" />
+      <root url="jar://F:/Jar_Files/commons-digester-1.7.jar!/" />
+      <root url="jar://F:/Jar_Files/commons-logging-1.2.jar!/" />
+      <root url="jar://F:/Jar_Files/dsn-1.6.2.jar!/" />
+      <root url="jar://F:/Jar_Files/fontawesomefx-8.0.1.jar!/" />
+      <root url="jar://F:/Jar_Files/fonts-fontawesome-3.2.1.0.jar!/" />
+      <root url="jar://F:/Jar_Files/gimap-1.6.2.jar!/" />
+      <root url="jar://F:/Jar_Files/groovy-all-1.7.5.jar!/" />
+      <root url="jar://F:/Jar_Files/imap-1.6.2.jar!/" />
+      <root url="jar://F:/Jar_Files/itext-pdfa-5.5.5.jar!/" />
+      <root url="jar://F:/Jar_Files/itext-xtra-5.5.5.jar!/" />
+      <root url="jar://F:/Jar_Files/itextpdf-5.5.5.jar!/" />
+      <root url="jar://F:/Jar_Files/jasperreports-6.0.0.jar!/" />
+      <root url="jar://F:/Jar_Files/javax.mail-api-1.6.2.jar!/" />
+      <root url="jar://F:/Jar_Files/javax.mail.jar!/" />
+      <root url="jar://F:/Jar_Files/jfoenix-8.0.1.jar!/" />
+      <root url="jar://F:/Jar_Files/jfoenix-8.0.4.jar!/" />
+      <root url="jar://F:/Jar_Files/jfoenix-9.0.4.jar!/" />
+      <root url="jar://F:/Jar_Files/logging-mailhandler-1.6.2.jar!/" />
+      <root url="jar://F:/Jar_Files/mail.jar!/" />
+      <root url="jar://F:/Jar_Files/mailapi-1.6.2.jar!/" />
+      <root url="jar://F:/Jar_Files/mysql-connector-java-5.1.28-bin.jar!/" />
+      <root url="jar://F:/Jar_Files/mysql-connector-java-8.0.11.jar!/" />
+      <root url="jar://F:/Jar_Files/mysql-connector-java-8.0.12.jar!/" />
+      <root url="jar://F:/Jar_Files/pop3-1.6.2.jar!/" />
+      <root url="jar://F:/Jar_Files/smtp-1.6.2.jar!/" />
+      <root url="jar://F:/Jar_Files/sqlite-jdbc-3.23.1.jar!/" />
+      <root url="jar://F:/Jar_Files/zxing-1.7-javase.jar!/" />
+      <root url="jar://F:/Jar_Files/zxing-core-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

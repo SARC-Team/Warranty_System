@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.date-picker-popup .calender-grid {
+    -fx-pref-width: 300;
+    -fx-pre-height: 250;
+}
+.date-picker-popup .spinner-label {
+    -fx-font-size: 30.0;
+    -font-size: 30.0;
+}
